@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Commissioner', sans-serif;
+    scroll-behavior: smooth;
+    background-image: url("./images/bg-stars.svg");
+    background-color: hsl(235, 16%, 14%);
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50px;
+    background-color: blue;
+}
+.container {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.image {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    z-index: -1;
+}
+.wrapper {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.launch {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0%;
+    letter-spacing: 10px;
+    margin-top: 8%;
+}
+
+.countdown {
+    max-width: 1440px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.countwrap  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.Modalbox {
+    width: 120px;
+    height: 120px;
+    /* background: hsl(236, 21%, 26%);
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsl(234, 17%, 12%); */
+}
+.card {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 8px 8px 10px 10px;
+    margin-bottom: 0px;
+    box-shadow: 0px 10px hsl(234, 17%, 12%);
+    background: hsl(236, 21%, 26%);
+}
+.card .text {
+    font-size: 60px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 10px;
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    margin-left: 20px;
+}
+.card2 {
+    width: 100%;
+    height: 50px;
+    color: hsl(237, 18%, 59%);
+    text-align: center;
+    border-radius: 10px 10px 8px 8px;
+    box-shadow: 0px 10px hsl(234, 17%, 12%);
+    background: hsl(236, 21%, 26%);
+    margin-top: 0.2.9px;
+}
+.card2 p {
+    position: absolute;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 300;
+}
+.icons  {
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 10%;
+    display: flex;
+}
+.attribution {
+    max-width: 1440px;
+    position: absolute;
+    margin-left: auto;
+    bottom: 0%;
+    margin-right: auto;
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .wrapper {
+        text-align: center;
+        width: 100%;
+    }
+    .launch {
+        font-size: 35px;
+        width: 90%;
+        margin-top: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .countdown {
+        padding: 0px 40px 0px 40px;
+    }
+    .countwrap {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .card2 p {
+        margin-top:80px;
+        margin-left: 30px;
+    }
+    .icons {
+        width: 30%;
+        margin-top: 65%;
+    }
+    .image {
+        width: 100%;
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 540px) {
+    .wrapper {
+        text-align: center;
+        width: 100%;
+    }
+    .launch {
+        font-size: 18px;
+        width: 90%;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .countdown {
+        padding: 0px 10px 0px 10px;
+    }
+    .countwrap {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .Modalbox {
+        width: 75px;
+        height: 70px;
+    }
+    .card .text {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .card {
+        height: 40px;
+    }
+    .card2 {
+        height: 40px;
+    }
+    .card2 p {
+        margin-top:60px;
+        margin-left: 10px;
+    }
+    .icons {
+        width: 35%;
+        margin-top: 80%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* .launch {
+        font-size: 35px;
+        width: 90%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    .countdown {
+        padding: 0px 50px 0px 50px;
+    }
+    .countwrap {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .card2 p {
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+    .icons {
+        width: 25%;
+        margin-top: 35%;
+    }
+}

@@ -1,6 +1,6 @@
 const timer = document.querySelector(".text");
 function countdown() {
-    const endDate = new Date("june 20 2022 00:00:00").getTime()
+    const endDate = new Date("december 31 2022 00:00:00").getTime()
     const now = new Date().getTime()
 
     const differnce = endDate - now;
@@ -8,7 +8,7 @@ function countdown() {
     const seconds = 1000;
     const minutes = seconds * 60;
     const hours = minutes * 60;
-    const days = hours * 24
+    const days = hours * 24  
     
     let dayTime = Math.floor(differnce / days)
     let hourTime = Math.floor((differnce % days) / hours)
